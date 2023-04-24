@@ -1,0 +1,69 @@
+/* font  amiri */
+@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+/* font edu nswac */
+  @import url('https://fonts.googleapis.com/css2?family=Amiri&family=Edu+NSW+ACT+Foundation:wght@700&display=swap');
+.arb {
+  font-family: 'Amiri', serif;
+}
+.edu {
+  font-family: 'Edu NSW ACT Foundation', cursive;
+}
+
+/* gambar sebelum navbar */
+.logo {
+    width: 100%;
+    height: 400px;
+    background-image: url("img/teras.jpg");
+    background-color: white;
+    background-size: 350px 350px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* navbar */
+nav {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  direction: rtl;
+  justify-content: center;
+  text-align: center;
+  
+}
+nav span {
+  grid-column: 1 / span 4;
+  font-family: 'Edu NSW ACT Foundation', cursive;
+  background-color: #248D7F;
+  padding: 10px;
+  border-radius: 5px;
+}
+nav a {
+  text-decoration: none;
+  font-size: 18pt;
+  text-align: center;
+  position: relative;
+  top: 55px;
+  color: rgb(0, 0, 0);
+}
+.menu {
+  text-align: center;
+  background-image: url("img/icon.png");
+  background-size: 150px 150px;
+  width: 150px;
+  height: 150px;
+  background-color: #7CD8CE;
+  margin-top: 10px;
+}
+.iman {
+  border-radius: 0 5px 5px 0;
+}
+.saah{
+  border-radius: 5px 0 0 5px;
+}
+.saah a{
+  font-size: 17px;
+  top: 60px;
+}
+/* countainer */
+.countainer{
+  display: grid;
+  grid-template-columns: auto auto;
+}

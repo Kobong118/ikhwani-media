@@ -1,0 +1,44 @@
+.mb-main{
+    margin:0 0 0 45px;
+}
+.mb-menu{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10px;
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    border-radius: 0 5px 5px 0;
+    padding: 10px 0 10px 0;
+
+}
+.hidden{
+    width: 0;
+    height: 40px;
+}
+.Tmenu {
+    position: absolute;
+    right: -35px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    cursor: pointer;
+
+}
+.menu-icon{
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    text-indent: -999px;
+}
+.border-icon{
+    height: 15px;
+    border-top: 5px solid #000000;
+    border-bottom: 5px solid #000000;
+    }
+.border-icon:before{
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    border-top: 5px solid #000000;
+}
