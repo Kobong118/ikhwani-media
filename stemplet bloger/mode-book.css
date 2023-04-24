@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+
+.arb {
+    font-family: 'Amiri', serif;
+}
+a:link {
+    text-decoration: none;
+}
+a {
+    color: #000000;
+}
 .mb-main{
     margin:0 0 0 45px;
 }
@@ -11,6 +22,19 @@
     padding: 10px 0 10px 0;
 
 }
+.mb-menu ul {
+    list-style-type: none;
+    padding: 0 10px 0 5px;
+  }
+  
+  .mb-menu  ul li {
+    padding: 8px 16px;
+    margin: 5px 0 5px 0;
+    border: 1px solid #030303;
+    border-radius: 5px;
+    background-color: #696e4a;
+  }
+  
 .hidden{
     width: 0;
     height: 40px;
