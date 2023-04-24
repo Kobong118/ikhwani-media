@@ -26,7 +26,13 @@ ulListMenu[0].hidden = false
     ulListMenu[0].hidden = true}
 mbmenu[0].classList.toggle('hidden')
 };
-ulListMenu[0].onclick = ()=>{mbmenu[0].classList.toggle('hidden'); ulListMenu[0].hidden = true};
+
+const Tlist = ulListMenu[0].getElementsByTagName("a");
+for (let i = 0; i < Tlist.length; i++) {
+    Tlist[i].onclick = ()=>{
+        mbmenu[0].classList.toggle('hidden'); ulListMenu[0].hidden = true};
+    
+};
 
 // cari text arabic
 const textArb = document.getElementsByTagName("h1");

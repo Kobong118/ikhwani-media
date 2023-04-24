@@ -30,9 +30,14 @@ a {
   .mb-menu  ul li {
     padding: 8px 16px;
     margin: 5px 0 5px 0;
-    border: 1px solid #030303;
-    border-radius: 5px;
-    background-color: #696e4a;
+    border-top: 1px solid #5c4242;
+    border-bottom: 1px solid #5c4242;
+    border-radius: 10px;
+    background-image: url("img/judul.png");
+    background-position: center;
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    text-align: center;
   }
   
 .hidden{
@@ -65,4 +70,14 @@ a {
     left: 0;
     width: 100%;
     border-top: 5px solid #000000;
+}
+.mb-head{
+    text-align: center;
+    background-image: url("img/judul.png");
+    background-position: center;
+    background-size: 100% 100%;;
+    background-repeat: no-repeat;
+    border-top: 1px solid #5c4242;
+    border-bottom: 1px solid #5c4242;
+    border-radius: 20px;
 }
