@@ -2,6 +2,7 @@
 
 .arb {
     font-family: 'Amiri', serif;
+    direction: rtl;
 }
 a:link {
     text-decoration: none;
@@ -15,11 +16,12 @@ a {
 .mb-menu{
     position: -webkit-sticky;
     position: sticky;
-    top: 10px;
+    top: 80px;
     background-color: rgb(255, 255, 255);
     width: 300px;
     border-radius: 0 5px 5px 0;
     padding: 10px 0 10px 0;
+    z-index: 9999;
 
 }
 ul {
