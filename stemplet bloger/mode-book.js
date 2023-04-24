@@ -1,3 +1,4 @@
+const arb = /[\u0600-\u06ff]/
 const ulListMenu = document.getElementsByClassName('mb-list-menu') ;
 const qMbmaim = document.getElementsByClassName('konten');
 if (qMbmaim.length !=0) {
@@ -10,6 +11,9 @@ if (qMbmaim.length !=0) {
         let listName = qMbmaim[i].getElementsByTagName("h1");
         aItem.innerHTML = listName[0].innerHTML;
         item.appendChild(aItem);
+        if (arb.test(item.textContent)) {
+            item.classList.add("arb")
+        }
         ulListMenu[0].appendChild(item);
         
     }
@@ -25,7 +29,6 @@ mbmenu[0].classList.toggle('hidden')
 ulListMenu[0].onclick = ()=>{mbmenu[0].classList.toggle('hidden'); ulListMenu[0].hidden = true};
 
 // cari text arabic
-const arb = /[\u0600-\u06ff]/
 const textArb = document.getElementsByTagName("h1");
 const textArb2 = document.getElementsByTagName("span");
 if (textArb.length !=0) {
