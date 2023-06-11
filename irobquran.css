@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+.surat{
+    text-align: center;
+    font-family: 'Amiri', serif;
+    width: 80%;
+}
+.ayat .irob{
+    float: right;
+    padding-right: 5px;
+    cursor: pointer;
+}
+.ayat span:hover, .ayat span:focus{
+    color: yellowgreen;
+}
+.irob{
+    position: relative;
+    display: inline-block;
+}
+.irob .irobteks{
+    visibility: hidden;
+    width: 120px;
+    background-color: yellowgreen;
+    color: whitesmoke;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0px;
+
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+.irob:hover .irobteks{
+    visibility: visible;
+}
