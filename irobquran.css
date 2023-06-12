@@ -19,8 +19,9 @@
 .irob .irobteks{
     visibility: hidden;
     width: 120px;
-    background-color: yellowgreen;
-    color: whitesmoke;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    color: yellowgreen;
     text-align: center;
     border-radius: 5px;
     padding: 5px 0px;
@@ -33,4 +34,10 @@
 }
 .irob:hover .irobteks{
     visibility: visible;
+}
+.ro{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    text-align: center;
+    font-family: 'Amiri', serif;
 }
