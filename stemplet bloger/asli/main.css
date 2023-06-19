@@ -23,7 +23,7 @@
     z-index: 1;
 }
 .atas img{
-    width: 25px;
+    width: 20px;
 }
 .atas-app, .atas-cari{
     display: flex;
@@ -34,6 +34,8 @@
 }
 .atas-app{
     cursor: pointer;
+    border-radius: 7px;
+    padding: 2px;
 }
 .atas-app span{
     margin-left: 10px;
@@ -55,35 +57,59 @@
     position: fixed;
     width: 100%;
     top: -45px;
-    transition: top 3s;
+    transition: top 1s;
     
 }
 .atas-menu-item{
-    max-width: fit-content;
-    margin: auto;
-    background-color: var(--warna1);
-    padding: 10px;
-    border-radius: 15px;
-    border: 1px solid var(--warna4);
+    padding: 2px 20px;
+    transition: background-color 3s;
+    position: relative;
+    right: -9000px;
+    transition: cubic-bezier(0, 0, 0.01, 0),1s;
 }
 .atas-menu-item div{
     display: inline-block;
     text-align: center;
-    border: 1px solid var(--warna4);
     padding: 5px;
-    border-radius: 15px;
 }
 .atas-menu-item img{
-    width: 30px;
+    width: 20px;
 }
 .atas-menu-item a{
     display: block;
+    text-decoration: none;
+    color: black;
 }
 .show{
     top: 45px;
-    transition: top 3s;
+    transition: top 1s;
+}
+.show2{
+    right: 0;
+    background-color: var(--warna1);
+    transition: cubic-bezier(0, 0, 0.01, 0),1s;
+    
+}
+.nyala{
+    background-color: salmon;
 }
 .hedd{
     top: -45px;
     transition: top 3s;
+}
+/* tengah */
+.tengah{
+    padding-top: 105px;
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content:space-between;
+}
+.tengah-kiri{
+    max-width: 30%;
+    border: 1px solid var(--warna1);
+    width: 30%;
+}
+.tengah-kanan{
+    max-width: 70%;
 }
