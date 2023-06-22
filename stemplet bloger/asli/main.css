@@ -4,112 +4,29 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* variable */
-:root{
-    --warna1:#81ee96;
-    --warna2:#443e19;
-    --warna3:#48421b;
-    --warna4:#e8e8e8;
-}
-/* atas */
-.atas{
-    position: fixed;
-    width: 100%;
-    background-color: var(--warna1);
+  @import url('https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap');
+
+
+
+.section-navbar{
+    font-family: 'Teko', sans-serif;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
-    padding: 5px;
-    z-index: 1;
+    z-index: 200;
 }
-.atas img{
-    width: 20px;
-}
-.atas-app, .atas-cari{
+.menu-page ul{
+    list-style: none;
     display: flex;
-    align-items: center;
-    padding: 3px 16px;
-    border: 1px solid var(--warna4);
-    border-radius: 15px;
 }
-.atas-app{
-    cursor: pointer;
-    border-radius: 7px;
-    padding: 2px;
+.menu-page ul li{
+    margin-left: 5px;
 }
-.atas-app span{
-    margin-left: 10px;
-}
-.atas-cari img{
-    width: 20px;
-    margin-left: 3px;
-    border: 1px solid #000;
-    border-radius: 10px;
-    cursor: pointer;
-}
-.atas-cari input{
-    padding: 3px;
-    border-radius: 15px;
-    border: none;
-    padding-left: 20px;
-}
-.atas-menu{
-    position: fixed;
-    width: 100%;
-    top: -45px;
-    transition: top 1s;
-    
-}
-.atas-menu-item{
-    padding: 2px 20px;
-    transition: background-color 3s;
-    position: relative;
-    right: -9000px;
-    transition: cubic-bezier(0, 0, 0.01, 0),1s;
-}
-.atas-menu-item div{
-    display: inline-block;
-    text-align: center;
-    padding: 5px;
-}
-.atas-menu-item img{
-    width: 20px;
-}
-.atas-menu-item a{
-    display: block;
-    text-decoration: none;
-    color: black;
-}
-.show{
-    top: 45px;
-    transition: top 1s;
-}
-.show2{
+.cari{
+    position: absolute;
+    top: 40px;
+    left: 0;
     right: 0;
-    background-color: var(--warna1);
-    transition: cubic-bezier(0, 0, 0.01, 0),1s;
-    
-}
-.nyala{
-    background-color: salmon;
-}
-.hedd{
-    top: -45px;
-    transition: top 3s;
-}
-/* tengah */
-.tengah{
-    padding-top: 105px;
     display: flex;
-    width: 90%;
-    margin: auto;
-    justify-content:space-between;
-}
-.tengah-kiri{
-    max-width: 30%;
-    border: 1px solid var(--warna1);
-    width: 30%;
-}
-.tengah-kanan{
-    max-width: 70%;
+    justify-content: center;
 }
